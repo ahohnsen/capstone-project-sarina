@@ -14,5 +14,4 @@ export default function ColorCategoryFilter({onColorChange}) {
 
 const StyledCategories = styled.form`
   display: flex;
-  align-items: row;
 `;
