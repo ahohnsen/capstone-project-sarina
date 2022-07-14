@@ -1,4 +1,4 @@
-import imageContainer from './imageContainer';
+import imageContainer from './ImageContainer';
 
 export default {
   title: 'components/imageContainer',

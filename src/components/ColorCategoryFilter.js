@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export default function Categories({onColorChange}) {
+export default function ColorCategoryFilter({onColorChange}) {
   return (
     <StyledCategories>
       <select name="color-list" id="color-list" onChange={onColorChange}>
@@ -12,9 +12,6 @@ export default function Categories({onColorChange}) {
   );
 }
 
-const StyledCategories = styled.div`
-  margin: 0.5rem;
-  padding: 0.5rem;
+const StyledCategories = styled.form`
   display: flex;
-  justify-content: space-evenly;
 `;
