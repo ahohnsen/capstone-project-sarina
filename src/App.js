@@ -1,9 +1,9 @@
 import {useMemo, useState} from 'react';
 import styled from 'styled-components';
 
-import BrandCategoryFilter from './components/brandCategoryFilter';
-import ColorCategoryFilter from './components/colorCategoryFilter';
-import ImageContainer from './components/imageContainer';
+import BrandCategoryFilter from './components/BrandCategoryFilter';
+import ColorCategoryFilter from './components/ColorCategoryFilter';
+import ImageContainer from './components/ImageContainer';
 import data from './garmentsData';
 
 export default function App() {
@@ -44,8 +44,8 @@ export default function App() {
     <AppContainer>
       <Title>My minimalist wardrobe</Title>
       <ul>
-      <ColorCategoryFilter onColorChange={handleColorChange} />
-      <BrandCategoryFilter onBrandChange={handleBrandChange} />
+        <ColorCategoryFilter onColorChange={handleColorChange} />
+        <BrandCategoryFilter onBrandChange={handleBrandChange} />
       </ul>
       <ImageContainer garments={filteredColorList} favorite={favorite} onAddToFavorites={addToFavorites} />
     </AppContainer>
